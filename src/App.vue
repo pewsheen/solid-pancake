@@ -46,8 +46,8 @@
 <script>
 import isImageUrl from "is-image-url";
 import VueCompareImage from "vue-compare-image";
-import defaultLeftImage from "./assets/IMG_2214.jpeg";
-import defaultRightImage from "./assets/IMG_2215.jpeg";
+import defaultLeftImage from "./assets/IMG_2214.jpg";
+import defaultRightImage from "./assets/IMG_2215.jpg";
 
 export default {
   name: "App",
