@@ -12,7 +12,7 @@
               <v-col cols="12" sm="6">
                 <v-text-field label="Right Image URL" :rules="[rules.imageUrlMatch]" v-model="rightImgURL" />
               </v-col>
-              <v-col cols="12" md="8">
+              <v-col cols="12" md="7">
                 <v-text-field color="warning" label="Share URL" readonly :value="shareURL"></v-text-field>
               </v-col>
               <v-col cols="4" md="2">
@@ -21,7 +21,7 @@
                   <v-icon dark right v-if="copySuccess">mdi-checkbox-marked-circle</v-icon>
                 </v-btn>
               </v-col>
-              <v-col cols="8" md="2">
+              <v-col cols="8" md="3">
                 <v-btn
                   block
                   depressed
@@ -148,7 +148,7 @@ export default {
         return window.location.href;
       }
       let result = "";
-      let location = `${window.location.protocol}//${window.location.host}/`;
+      let location = `${window.location.origin}${window.location.pathname}`;
       let param = {
         leftImg: this.leftImgURL,
         rightImg: this.rightImgURL
